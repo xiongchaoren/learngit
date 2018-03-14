@@ -5,14 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>npm常用方法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1. 包使用者常用Command1.1 包的初始化1$ npm init [-yes]  npm init: 在当前目录下以用户引导的方式创建一个全新的package.json文件 -yes: 快速创建一个默认配置的package.json文件  1.2 包的下载安装1$  npm install [packageName[@versioin-number]] [-g] [--save[-dev]">
+<meta name="keywords" content="npm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="npm常用方法">
+<meta property="og:url" content="http://yoursite.com/2018/03/14/npmGrammer/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. 包使用者常用Command1.1 包的初始化1$ npm init [-yes]  npm init: 在当前目录下以用户引导的方式创建一个全新的package.json文件 -yes: 快速创建一个默认配置的package.json文件  1.2 包的下载安装1$  npm install [packageName[@versioin-number]] [-g] [--save[-dev]">
+<meta property="og:updated_time" content="2018-03-14T12:33:16.540Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="npm常用方法">
+<meta name="twitter:description" content="1. 包使用者常用Command1.1 包的初始化1$ npm init [-yes]  npm init: 在当前目录下以用户引导的方式创建一个全新的package.json文件 -yes: 快速创建一个默认配置的package.json文件  1.2 包的下载安装1$  npm install [packageName[@versioin-number]] [-g] [--save[-dev]">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-npmGrammer" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-npmGrammer" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/14/npmGrammer/" class="article-date">
   <time datetime="2018-03-14T10:44:41.000Z" itemprop="datePublished">2018-03-14</time>
@@ -74,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/14/npmGrammer/">npm常用方法</a>
+    <h1 class="article-title" itemprop="name">
+      npm常用方法
     </h1>
   
 
@@ -193,195 +196,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-yaml" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/13/yaml/" class="article-date">
-  <time datetime="2018-03-13T02:23:04.000Z" itemprop="datePublished">2018-03-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/13/yaml/">yaml常用语法</a>
-    </h1>
+    <a href="/2018/03/13/yaml/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">yaml常用语法</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h2><p>YAML语言是一个方便读写的数据串行化格式。</p>
-<p>基本语法规则：</p>
-<ul>
-<li>大小写敏感</li>
-<li>使用缩进表示层级关系</li>
-<li>缩进时不允许使用Tab键，只允许使用空格</li>
-<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
-<li><code>#</code>表示注释</li>
-<li>字符串默认不使用引号表示,有单双引号的区别</li>
-</ul>
-<p>数据结构：对象，数组，字面量</p>
-<h2 id="2-对象"><a href="#2-对象" class="headerlink" title="2. 对象"></a>2. 对象</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">格式：key:</span> <span class="string">value</span></span><br><span class="line"><span class="string">转json：&#123;</span> <span class="attr">key:</span> <span class="string">value</span> <span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
-<h2 id="3-数组"><a href="#3-数组" class="headerlink" title="3. 数组"></a>3. 数组</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">格式：-</span> <span class="string">value</span></span><br><span class="line"><span class="string">转json：[value]</span></span><br></pre></td></tr></table></figure>
-<h2 id="4-复合结构"><a href="#4-复合结构" class="headerlink" title="4. 复合结构"></a>4. 复合结构</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">格式：</span></span><br><span class="line"><span class="attr">languages:</span></span><br><span class="line"><span class="bullet"> -</span> <span class="string">Ruby</span></span><br><span class="line"><span class="bullet"> -</span> <span class="string">Perl</span></span><br><span class="line"><span class="bullet"> -</span> <span class="string">Python</span> </span><br><span class="line"><span class="attr">websites:</span></span><br><span class="line"><span class="attr"> YAML:</span> <span class="string">yaml.org</span> </span><br><span class="line"><span class="attr"> Ruby:</span> <span class="string">ruby-lang.org</span> </span><br><span class="line"><span class="attr"> Python:</span> <span class="string">python.org</span> </span><br><span class="line"><span class="attr"> Perl:</span> <span class="string">use.perl.org</span></span><br><span class="line"> </span><br><span class="line"> <span class="string">转json：</span></span><br><span class="line"> <span class="string">&#123;</span> <span class="attr">languages:</span> <span class="string">[</span> <span class="string">'Ruby'</span><span class="string">,</span> <span class="string">'Perl'</span><span class="string">,</span> <span class="string">'Python'</span> <span class="string">],</span></span><br><span class="line"><span class="attr">  websites:</span> </span><br><span class="line">   <span class="string">&#123;</span> <span class="attr">YAML:</span> <span class="string">'yaml.org'</span><span class="string">,</span></span><br><span class="line"><span class="attr">     Ruby:</span> <span class="string">'ruby-lang.org'</span><span class="string">,</span></span><br><span class="line"><span class="attr">     Python:</span> <span class="string">'python.org'</span><span class="string">,</span></span><br><span class="line"><span class="attr">     Perl:</span> <span class="string">'use.perl.org'</span> <span class="string">&#125;</span> <span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
-<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p><a href="http://www.ruanyifeng.com/blog/2016/07/yaml.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/07/yaml.html</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/13/yaml/" data-id="cjer2jjs30005f712hxv4a7yj" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yaml/">yaml</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-commander" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/13/commander/" class="article-date">
-  <time datetime="2018-03-13T02:01:06.000Z" itemprop="datePublished">2018-03-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/13/commander/">commander总结</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/13/commander/" data-id="cjer2jjs00003f7125e1v6yjp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-MarkdownGrammer" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/13/MarkdownGrammer/" class="article-date">
-  <time datetime="2018-03-12T17:14:49.000Z" itemprop="datePublished">2018-03-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/13/MarkdownGrammer/">markdown基本语法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-常用语法"><a href="#1-常用语法" class="headerlink" title="1. 常用语法"></a>1. 常用语法</h2><h3 id="1-1-标题"><a href="#1-1-标题" class="headerlink" title="1.1 标题"></a>1.1 标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式：# 标题</span><br><span class="line">说明：#个数代表h1-h6</span><br></pre></td></tr></table></figure>
-<h3 id="1-2-链接"><a href="#1-2-链接" class="headerlink" title="1.2 链接"></a>1.2 链接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式： [显示链接名](链接地址)</span><br><span class="line">格式2：&lt;链接地址&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="1-3-列表"><a href="#1-3-列表" class="headerlink" title="1.3 列表"></a>1.3 列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式：- 列表内容</span><br><span class="line">说明：- 表示无序列表,换成数字就是有序列表</span><br></pre></td></tr></table></figure>
-<h3 id="1-4-代码块"><a href="#1-4-代码块" class="headerlink" title="1.4 代码块"></a>1.4 代码块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">格式： ``` 代码类型(比如javascript)</span><br></pre></td></tr></table></figure>
-<h3 id="1-5-代码片段"><a href="#1-5-代码片段" class="headerlink" title="1.5 代码片段"></a>1.5 代码片段</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">格式：`代码片段`</span><br></pre></td></tr></table></figure>
-<h3 id="1-6-YAML-Front-Matter"><a href="#1-6-YAML-Front-Matter" class="headerlink" title="1.6 YAML Front Matter"></a>1.6 YAML Front Matter</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式： --- + enter</span><br><span class="line">说明：只能放在文件顶部</span><br></pre></td></tr></table></figure>
-<h2 id="2-不常用"><a href="#2-不常用" class="headerlink" title="2. 不常用"></a>2. 不常用</h2><h3 id="2-1-引用"><a href="#2-1-引用" class="headerlink" title="2.1 引用"></a>2.1 引用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">格式： &gt; 内容</span><br></pre></td></tr></table></figure>
-<h3 id="2-2-分隔线"><a href="#2-2-分隔线" class="headerlink" title="2.2 分隔线"></a>2.2 分隔线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">格式： --- Enter</span><br></pre></td></tr></table></figure>
-<h3 id="2-3-图片"><a href="#2-3-图片" class="headerlink" title="2.3 图片"></a>2.3 图片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式：![无图片时显示文字](资源地址 &quot;提示文字&quot;)</span><br><span class="line">带链接的图片：[![Build Status](https://api.travis-ci.org/tj/commander.js.svg?branch=master)](https://xiongchaoren.github.io/)</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/13/MarkdownGrammer/" data-id="cjer2jjrq0000f712oxl2cjxl" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/12/hello-world/" class="article-date">
-  <time datetime="2018-03-11T17:14:49.000Z" itemprop="datePublished">2018-03-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/12/hello-world/">Hexo基本命令</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/12/hello-world/" data-id="cjer2jjrv0001f712o24pbdtp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
